@@ -78,7 +78,7 @@ namespace CourseWork.Infrastructure.TagHelpers
             }
             else
             {
-                for (int currentPage = PageCount - (2 * PageRange); currentPage < PageCount + 1; currentPage++)
+                for (int currentPage = PageCount - 2 * PageRange; currentPage < PageCount + 1; currentPage++)
                 {
                     if (currentPage < 1 || currentPage > PageCount)
                     {

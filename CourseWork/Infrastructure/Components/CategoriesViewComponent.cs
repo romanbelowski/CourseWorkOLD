@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CourseWork.Infrastructure;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace CourseWork.Infrastructure.Components
@@ -11,7 +12,7 @@ namespace CourseWork.Infrastructure.Components
         {
             _context = context;
         }
+
         public async Task<IViewComponentResult> InvokeAsync() => View(await _context.Categories.ToListAsync());
-        
     }
 }

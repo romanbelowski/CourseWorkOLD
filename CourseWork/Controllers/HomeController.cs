@@ -1,5 +1,5 @@
-﻿using CourseWork.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using CourseWork.Models;
 using System.Diagnostics;
 
 namespace CourseWork.Controllers
